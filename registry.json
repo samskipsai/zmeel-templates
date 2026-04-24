@@ -1,0 +1,79 @@
+{
+  "version": "1",
+  "generatedAt": "2026-04-24T17:56:13.551816+00:00",
+  "commitSha": "725211c2f0e29224766f485b67cc200c51ce0f80",
+  "templates": [
+    {
+      "id": "admin",
+      "version": 1,
+      "label": "Executive Assistant",
+      "icon": "calendar-check",
+      "category": "executive",
+      "description": "Calendar, emails, briefings, expenses",
+      "skillCount": 0
+    },
+    {
+      "id": "ceo",
+      "version": 1,
+      "label": "CEO",
+      "icon": "crown",
+      "category": "executive",
+      "description": "Leads the company, sets strategy, delegates work, hires. Not an individual contributor.",
+      "skillCount": 0
+    },
+    {
+      "id": "engineer",
+      "version": 1,
+      "label": "Engineer",
+      "icon": "code-2",
+      "category": "engineering",
+      "description": "Triages bugs, reviews PRs, writes code, docs",
+      "skillCount": 0
+    },
+    {
+      "id": "hr",
+      "version": 1,
+      "label": "HR",
+      "icon": "users",
+      "category": "hr",
+      "description": "Job descriptions, interviews, onboarding, compliance",
+      "skillCount": 0
+    },
+    {
+      "id": "marketing",
+      "version": 1,
+      "label": "Marketing",
+      "icon": "megaphone",
+      "category": "marketing",
+      "description": "Content engine \u2014 blog posts, social, newsletters",
+      "skillCount": 0
+    },
+    {
+      "id": "ops",
+      "version": 1,
+      "label": "Operations",
+      "icon": "clipboard-list",
+      "category": "operations",
+      "description": "Invoices, vendors, reports, checklists",
+      "skillCount": 0
+    },
+    {
+      "id": "product",
+      "version": 1,
+      "label": "Product",
+      "icon": "lightbulb",
+      "category": "product",
+      "description": "Feature requests, release notes, user feedback",
+      "skillCount": 0
+    },
+    {
+      "id": "sales_sdr",
+      "version": 1,
+      "label": "Sales SDR",
+      "icon": "phone-outgoing",
+      "category": "sales",
+      "description": "Prospects leads, writes outreach, follows up",
+      "skillCount": 0
+    }
+  ]
+}
