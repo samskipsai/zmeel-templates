@@ -1,7 +1,7 @@
 {
   "version": "1",
-  "generatedAt": "2026-04-24T19:06:15.108170+00:00",
-  "commitSha": "2dc4b4e10f2f063598efb40c17da8068892960fb",
+  "generatedAt": "2026-04-24T19:11:04.514873+00:00",
+  "commitSha": "330cf574185a71754ac1404fce097493868397b6",
   "templates": [
     {
       "id": "account_executive",
@@ -23,7 +23,7 @@
     },
     {
       "id": "ceo",
-      "version": 1,
+      "version": 2,
       "label": "CEO",
       "icon": "crown",
       "category": "executive",
