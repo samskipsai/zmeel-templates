@@ -44,3 +44,4 @@ At hire time, the server substitutes `{company}` and `{name}` in the brain files
 ## Skills
 
 Each template may ship zero or more skill bundles under `skills/<slug>/SKILL.md`. These are imported into the hiring company's `company_skills` table on first hire and attached to the new agent's `adapterConfig.zmeelSkillSync.desiredSkills`.
+<!-- sync retrigger -->
