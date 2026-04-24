@@ -1,7 +1,7 @@
 {
   "version": "1",
-  "generatedAt": "2026-04-24T19:11:04.514873+00:00",
-  "commitSha": "330cf574185a71754ac1404fce097493868397b6",
+  "generatedAt": "2026-04-24T19:16:33.076638+00:00",
+  "commitSha": "6df6e64682cbdf9279e60d01866892430a7ea32d",
   "templates": [
     {
       "id": "account_executive",
@@ -273,6 +273,5 @@
       "description": "User interviews, usability tests, synthesis into product insight.",
       "skillCount": 0
     }
-  ],
-  "lastManualRetrigger": "2026-04-24T19:18:00Z"
+  ]
 }
