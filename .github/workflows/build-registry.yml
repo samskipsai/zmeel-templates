@@ -1,0 +1,65 @@
+name: Build registry
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Generate registry.json
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, subprocess, yaml
+          from datetime import datetime, timezone
+
+          sha = subprocess.check_output(["git", "rev-parse", "HEAD"]).decode().strip()
+          out = {
+              "version": "1",
+              "generatedAt": datetime.now(timezone.utc).isoformat(),
+              "commitSha": sha,
+              "templates": [],
+          }
+          for d in sorted(pathlib.Path("templates").iterdir()):
+              if not d.is_dir():
+                  continue
+              manifest = yaml.safe_load((d / "manifest.yaml").read_text())
+              skills_dir = d / "skills"
+              skill_count = (
+                  sum(1 for s in skills_dir.iterdir() if s.is_dir())
+                  if skills_dir.exists()
+                  else 0
+              )
+              out["templates"].append({
+                  "id": manifest["id"],
+                  "version": manifest["version"],
+                  "label": manifest["label"],
+                  "icon": manifest["icon"],
+                  "category": manifest["category"],
+                  "description": manifest["description"],
+                  "skillCount": skill_count,
+              })
+          pathlib.Path("registry.json").write_text(json.dumps(out, indent=2) + "\n")
+          PY
+
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet registry.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add registry.json
+            git commit -m "chore: update registry.json"
+            git push
+          fi
