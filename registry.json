@@ -1,8 +1,17 @@
 {
   "version": "1",
-  "generatedAt": "2026-04-24T18:20:09.895668+00:00",
-  "commitSha": "737e97ae4e767bc096a7714fc86ccdd47d2fa32b",
+  "generatedAt": "2026-04-24T19:02:45.441124+00:00",
+  "commitSha": "07711651d0e1764fd76ec7e94bb4dd20e0b3fe54",
   "templates": [
+    {
+      "id": "account_executive",
+      "version": 1,
+      "label": "Account Executive",
+      "icon": "briefcase",
+      "category": "sales",
+      "description": "Closes deals, owns quota, manages pipeline, negotiates contracts.",
+      "skillCount": 0
+    },
     {
       "id": "admin",
       "version": 1,
@@ -22,12 +31,111 @@
       "skillCount": 0
     },
     {
+      "id": "cfo",
+      "version": 1,
+      "label": "CFO",
+      "icon": "wallet",
+      "category": "executive",
+      "description": "Owns financial strategy, forecasts, capital allocation, compliance.",
+      "skillCount": 0
+    },
+    {
+      "id": "cmo",
+      "version": 1,
+      "label": "CMO",
+      "icon": "megaphone",
+      "category": "executive",
+      "description": "Owns brand, growth, content strategy, customer acquisition.",
+      "skillCount": 0
+    },
+    {
+      "id": "community_manager",
+      "version": 1,
+      "label": "Community Manager",
+      "icon": "users-round",
+      "category": "marketing",
+      "description": "Discord/Slack/forum engagement, user-generated content, events.",
+      "skillCount": 0
+    },
+    {
+      "id": "content_writer",
+      "version": 1,
+      "label": "Content Writer",
+      "icon": "pen-line",
+      "category": "marketing",
+      "description": "Blog posts, long-form content, case studies, SEO writing.",
+      "skillCount": 0
+    },
+    {
+      "id": "coo",
+      "version": 1,
+      "label": "COO",
+      "icon": "gauge",
+      "category": "executive",
+      "description": "Owns operations, process, scaling, cross-functional execution.",
+      "skillCount": 0
+    },
+    {
+      "id": "cto",
+      "version": 1,
+      "label": "CTO",
+      "icon": "cpu",
+      "category": "executive",
+      "description": "Owns engineering strategy, architecture, hiring, and delivery.",
+      "skillCount": 0
+    },
+    {
+      "id": "customer_success",
+      "version": 1,
+      "label": "Customer Success",
+      "icon": "heart-handshake",
+      "category": "sales",
+      "description": "Onboarding, retention, expansion, user health.",
+      "skillCount": 0
+    },
+    {
+      "id": "data_analyst",
+      "version": 1,
+      "label": "Data Analyst",
+      "icon": "bar-chart-3",
+      "category": "operations",
+      "description": "Dashboards, ad-hoc analysis, metrics definition, KPI reporting.",
+      "skillCount": 0
+    },
+    {
+      "id": "data_engineer",
+      "version": 1,
+      "label": "Data Engineer",
+      "icon": "database",
+      "category": "engineering",
+      "description": "Data pipelines, warehouses, ETL, data quality.",
+      "skillCount": 0
+    },
+    {
+      "id": "devops",
+      "version": 1,
+      "label": "DevOps Engineer",
+      "icon": "server",
+      "category": "engineering",
+      "description": "CI/CD, infra automation, deploys, on-call.",
+      "skillCount": 0
+    },
+    {
       "id": "engineer",
       "version": 1,
       "label": "Engineer",
       "icon": "code-2",
       "category": "engineering",
       "description": "Triages bugs, reviews PRs, writes code, docs",
+      "skillCount": 0
+    },
+    {
+      "id": "growth_marketer",
+      "version": 1,
+      "label": "Growth Marketer",
+      "icon": "trending-up",
+      "category": "marketing",
+      "description": "Acquisition experiments, funnel optimization, paid + organic growth.",
       "skillCount": 0
     },
     {
@@ -40,12 +148,39 @@
       "skillCount": 0
     },
     {
+      "id": "legal",
+      "version": 1,
+      "label": "Legal / Paralegal",
+      "icon": "scale",
+      "category": "operations",
+      "description": "Contracts, NDAs, compliance review, privacy policies.",
+      "skillCount": 0
+    },
+    {
       "id": "marketing",
       "version": 1,
       "label": "Marketing",
       "icon": "megaphone",
       "category": "marketing",
       "description": "Content engine \u2014 blog posts, social, newsletters",
+      "skillCount": 0
+    },
+    {
+      "id": "ml_engineer",
+      "version": 1,
+      "label": "ML Engineer",
+      "icon": "brain",
+      "category": "engineering",
+      "description": "Model training, evaluation, deployment, monitoring.",
+      "skillCount": 0
+    },
+    {
+      "id": "mobile_engineer",
+      "version": 1,
+      "label": "Mobile Engineer",
+      "icon": "smartphone",
+      "category": "engineering",
+      "description": "iOS + Android apps, mobile-specific patterns, app-store release.",
       "skillCount": 0
     },
     {
@@ -67,12 +202,75 @@
       "skillCount": 0
     },
     {
+      "id": "product_designer",
+      "version": 1,
+      "label": "Product Designer",
+      "icon": "palette",
+      "category": "design",
+      "description": "UX + UI for features, design systems, user flows.",
+      "skillCount": 0
+    },
+    {
+      "id": "qa",
+      "version": 1,
+      "label": "QA Engineer",
+      "icon": "check-circle",
+      "category": "engineering",
+      "description": "Test strategy, test automation, release verification.",
+      "skillCount": 0
+    },
+    {
+      "id": "recruiter",
+      "version": 1,
+      "label": "Recruiter",
+      "icon": "user-plus",
+      "category": "operations",
+      "description": "Sourcing, screening, interview coordination, offers.",
+      "skillCount": 0
+    },
+    {
       "id": "sales_sdr",
       "version": 1,
       "label": "Sales SDR",
       "icon": "phone-outgoing",
       "category": "sales",
       "description": "Prospects leads, writes outreach, follows up",
+      "skillCount": 0
+    },
+    {
+      "id": "security_engineer",
+      "version": 1,
+      "label": "Security Engineer",
+      "icon": "shield",
+      "category": "engineering",
+      "description": "AppSec, vulnerability management, incident response, compliance.",
+      "skillCount": 0
+    },
+    {
+      "id": "sre",
+      "version": 1,
+      "label": "SRE",
+      "icon": "shield-alert",
+      "category": "engineering",
+      "description": "Reliability, SLIs/SLOs, incident response, performance.",
+      "skillCount": 0
+    },
+    {
+      "id": "support_engineer",
+      "version": 1,
+      "label": "Support Engineer",
+      "icon": "life-buoy",
+      "category": "operations",
+      "description": "Technical support, escalations, bug triage, knowledge base.",
+      "skillCount": 0
+    },
+    {
+      "id": "ux_researcher",
+      "version": 1,
+      "label": "UX Researcher",
+      "icon": "search",
+      "category": "design",
+      "description": "User interviews, usability tests, synthesis into product insight.",
       "skillCount": 0
     }
   ]
