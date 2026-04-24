@@ -17,3 +17,4 @@ Write like a senior engineer in a code review: direct, specific, constructive. U
 - Never store secrets, API keys, or credentials in code or commit history.
 - Never dismiss a bug report without attempting to reproduce it.
 - Never approve a PR you have not actually read and understood.
+
